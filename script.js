@@ -7,6 +7,7 @@ const catButtons = $$('.cat-btn');
 let cards = $$('.tip-card');
 const darkToggle = $('#darkModeToggle');
 const scrollTopBtn = $('#scrollTop');
+const exportPdfBtn = $('#exportPdfBtn');
 const modeButtons = $$('.mode-btn');
 const accordionItems = $$('.accordion-item');
 const compareRows = $$('[data-section="table"] tbody tr');
@@ -113,6 +114,15 @@ function handleScrollTopVisibility() {
 
 function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
+// Exportar a PDF usando impresión del navegador
+function exportPDF() {
+  // Opcional: asegurar vista 'cards' para mejor maquetado
+  setViewMode('cards');
+  // Cerrar acordeón abierto para evitar cortes
+  accordionItems.forEach(i => i.classList.remove('open'));
+  window.print();
+}
+
 // Eventos
 searchInput.addEventListener('input', filterCards);
 catButtons.forEach(btn => btn.addEventListener('click', () => setActiveQuality(btn.dataset.quality)));
@@ -120,6 +130,7 @@ modeButtons.forEach(btn => btn.addEventListener('click', () => setViewMode(btn.d
 darkToggle.addEventListener('click', toggleDarkMode);
 scrollTopBtn.addEventListener('click', scrollToTop);
 window.addEventListener('scroll', handleScrollTopVisibility);
+exportPdfBtn && exportPdfBtn.addEventListener('click', exportPDF);
 
 // Inicialización
 initDarkMode();

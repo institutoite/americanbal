@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="54" viewBox="0 0 180 54" role="img" aria-labelledby="title desc">
+  <title id="title">American Bal</title>
+  <desc id="desc">Logo textual estilizado para American Bal con símbolo de fardo.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A2A33" />
+      <stop offset="70%" stop-color="#223845" />
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8E4A32" />
+      <stop offset="100%" stop-color="#A85A3E" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="180" height="54" rx="12" fill="url(#g1)"/>
+  <!-- Símbolo fardo -->
+  <g transform="translate(16 11)">
+    <rect x="0" y="0" width="32" height="32" rx="6" fill="url(#g2)" stroke="#F2F5F7" stroke-width="2" />
+    <path d="M4 10h24M4 16h24M4 22h24" stroke="#F2F5F7" stroke-width="2" stroke-linecap="round" />
+    <path d="M10 4v24" stroke="#F2F5F7" stroke-width="2" stroke-linecap="round" opacity="0.65" />
+    <path d="M22 4v24" stroke="#F2F5F7" stroke-width="2" stroke-linecap="round" opacity="0.65" />
+  </g>
+  <text x="60" y="24" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#F2F5F7" letter-spacing="1">AMERICAN</text>
+  <text x="60" y="42" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#8E4A32" letter-spacing="1.2">BAL</text>
+</svg>

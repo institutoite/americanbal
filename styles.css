@@ -72,6 +72,10 @@ button, input { font-family: inherit; }
   box-shadow: 0 6px 18px -8px rgba(0,0,0,0.5);
 }
 .site-header .logo-link { text-decoration:none; color: var(--color-text); }
+.logo-image { width:60px; height:auto; display:block; margin:0 .65rem 0 0; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.4)); }
+.branding h1 { display:inline-block; vertical-align:middle; }
+.logo-link { display:flex; align-items:center; }
+@media (max-width:640px){ .logo-image { width:50px; margin-right:.5rem; } }
 .main-nav ul { list-style:none; display:flex; gap:1rem; margin:.3rem 0 0; padding:0; }
 .main-nav a { text-decoration:none; color: var(--color-text-muted); font-size:.75rem; letter-spacing:.5px; text-transform:uppercase; padding:.4rem .55rem; border-radius:.4rem; transition:.25s background,.25s color; }
 .main-nav a:hover, .main-nav a:focus { background: var(--color-accent); color:#fff; }
@@ -278,4 +282,18 @@ body.mode-table .compare-wrapper { display:block; }
 /* Animaciones básicas */
 @media (prefers-reduced-motion: no-preference) {
   .tip-card { transition: transform .35s, border-color .35s, background .35s; }
+}
+
+/* Estilos para impresión (PDF) */
+@media print {
+  body { background:#fff !important; color:#000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .site-header, .main-nav, .actions, .view-toggle, .hero-cta, .hero-bullets, .categories, .mode-btn, #darkModeToggle, #scrollTop, #exportPdfBtn, .whatsapp-btn { display:none !important; }
+  .hero { padding:1.5rem 0 0; }
+  .hero h2 { background:none; color:#000; }
+  .hero-sub { color:#222; }
+  .filters { page-break-before: avoid; }
+  .tips-grid, .accordion, .compare-wrapper { page-break-inside: avoid; }
+  .tip-card { background:#fff; border:1px solid #999; box-shadow:none; }
+  .notice { background:#fff; border:1px solid #999; box-shadow:none; }
+  footer.site-footer, .contact-cta { display:none !important; }
 }

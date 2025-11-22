@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Guía de Fardos y Marcas | Ropa Americana</title>
+	<meta name="description" content="Guía detallada de identificación de fardos, marcas, calidades y advertencias en ropa americana." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="site-header" role="banner">
+		<div class="branding">
+			<a href="#hero" class="logo-link"><h1>Guía Fardos Ropa Americana</h1></a>
+			<p class="tagline">Evita renfardados. Maximiza tu inversión.</p>
+		</div>
+		<nav class="main-nav" aria-label="Navegación principal">
+			<ul>
+				<li><a href="#hero">Inicio</a></li>
+				<li><a href="#features">Por qué</a></li>
+				<li><a href="#marcas-titulo">Marcas</a></li>
+				<li><a href="#california-titulo">California</a></li>
+				<li><a href="#comparativa">Comparativa</a></li>
+				<li><a href="#contactar-emprender">Emprender</a></li>
+			</ul>
+		</nav>
+		<nav class="actions" aria-label="Acciones de interfaz">
+			<button id="darkModeToggle" class="btn" aria-pressed="false" title="Alternar modo oscuro">🌓</button>
+			<button id="scrollTop" class="btn" aria-label="Volver arriba" title="Volver arriba">↑</button>
+		</nav>
+	</header>
+
+	<section id="hero" class="hero" aria-labelledby="hero-heading">
+		<div class="hero-inner">
+			<h2 id="hero-heading">Domina la compra de fardos de ropa americana</h2>
+			<p class="hero-sub">Aprende a identificar calidad real, evitar renfardados y elegir proveedores confiables antes de invertir.</p>
+			<div class="hero-cta">
+				<a href="#features" class="btn primary-btn">Ver claves</a>
+				<a href="https://wa.me/59173697782" target="_blank" rel="noopener" class="btn outline-btn" aria-label="Abrir WhatsApp para emprender">Contactar</a>
+			</div>
+			<ul class="hero-bullets" aria-label="Beneficios principales">
+				<li>Checklist rápido anti-renfardado</li>
+				<li>Diferencias entre calidades (Premium a Tercera)</li>
+				<li>Comparativas visuales y filtrado dinámico</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="features" class="features" aria-labelledby="features-heading">
+		<h2 id="features-heading">¿Por qué esta guía?</h2>
+		<div class="features-grid">
+			<article class="feature">
+				<h3>Evita pérdidas</h3>
+				<p>Detecta signos claros de renfardado antes de pagar un fardo inflado o manipulado.</p>
+			</article>
+			<article class="feature">
+				<h3>Compra inteligente</h3>
+				<p>Prioriza compresión, etiqueta y sellos para asegurar calidades auténticas.</p>
+			</article>
+			<article class="feature">
+				<h3>Ahorra tiempo</h3>
+				<p>Filtrado en vivo y vistas múltiples (tarjetas, acordeón, tabla) para comparar rápido.</p>
+			</article>
+			<article class="feature">
+				<h3>Listo para emprender</h3>
+				<p>Incluye CTA directa para asesoría personalizada si quieres iniciar tu negocio.</p>
+			</article>
+		</div>
+	</section>
+
+	<main id="contenido" class="layout" role="main">
+		<div class="view-toggle" aria-label="Cambiar modo de información">
+			<button class="mode-btn active" data-view="cards" aria-pressed="true">Vista Tarjetas</button>
+			<button class="mode-btn" data-view="accordion" aria-pressed="false">Vista Acordeón</button>
+			<button class="mode-btn" data-view="table" aria-pressed="false">Vista Tabla</button>
+		</div>
+		<section class="filters" aria-labelledby="filtros-titulo">
+			<h2 id="filtros-titulo" class="sr-only">Filtros y búsqueda</h2>
+			<div class="filter-bar">
+				<label for="search" class="search-label">Buscar:</label>
+				<input id="search" type="search" placeholder="Ej: Turgut, hule, Premium..." aria-describedby="search-help" />
+				<p id="search-help" class="sr-only">Escribe para filtrar las tarjetas por texto.</p>
+				<div class="categories" role="group" aria-label="Filtrar por calidad">
+					<button class="cat-btn active" data-quality="todos" aria-pressed="true">Todos</button>
+					<button class="cat-btn" data-quality="Premium" aria-pressed="false">Premium</button>
+					<button class="cat-btn" data-quality="Primera" aria-pressed="false">Primera</button>
+					<button class="cat-btn" data-quality="Segunda" aria-pressed="false">Segunda</button>
+					<button class="cat-btn" data-quality="Tercera" aria-pressed="false">Tercera</button>
+				</div>
+			</div>
+		</section>
+
+		<aside class="notice" role="note" aria-label="Consejo obligatorio">
+			<strong>Consejo obligatorio:</strong> Siempre revisa que el fardo esté bien amarrado y firmemente comprimido. Si el fardo está flojo, suelto, inflado o con el hule muy estirado, existe alta probabilidad de que haya sido renfardado (ya pudieron sacar las mejores prendas).
+		</aside>
+
+		<section class="tips-grid" aria-labelledby="marcas-titulo" data-section="cards">
+			<h2 id="marcas-titulo" class="sr-only">Marcas de Fardos</h2>
+			<!-- Marcas -->
+			<article class="tip-card" data-group="marca" data-quality="Primera">
+				<h3>Marca: Turgut</h3>
+				<p><strong>Características del hule:</strong> Hule grueso, firme, color parejo; compresión alta.</p>
+				<p><strong>Color de etiqueta:</strong> Azul (Primera), Amarilla (Segunda), Blanca (Tercera). Código QR en parte superior derecha o izquierda.</p>
+				<p><strong>Sellos / Originalidad:</strong> Etiqueta bien centrada, códigos impresos sin borrones.</p>
+				<p><strong>Calidad y Advertencias:</strong> Primera. Revisar amarre firme. Si está inflado, posible renfardado.</p>
+				<ul class="tags"><li>#Primera</li><li>#CompresiónAlta</li></ul>
+			</article>
+			<article class="tip-card" data-group="marca" data-quality="Primera Segunda">
+				<h3>Marca: Chungur</h3>
+				<p><strong>Características del hule:</strong> Hule semigrueso, textura firme. No debe verse arrugado.</p>
+				<p><strong>Color de etiqueta:</strong> Rojo (Primera), Amarillo (Segunda), Blanco (Tercera). Impresión limpia.</p>
+				<p><strong>Sellos / Originalidad:</strong> Sello rectangular; códigos legibles y sin manchas.</p>
+				<p><strong>Calidad y Advertencias:</strong> Primera / Segunda. Si el hule está muy estirado, sospechar manipulación.</p>
+				<ul class="tags"><li>#Primera</li><li>#Segunda</li><li>#HuleFirme</li></ul>
+			</article>
+			<article class="tip-card" data-group="marca" data-quality="Primera">
+				<h3>Marca: Tuana</h3>
+				<p><strong>Características del hule:</strong> Hule grueso y rígido, bien comprimido.</p>
+				<p><strong>Color de etiqueta:</strong> Roja (Primera), Amarilla (Segunda), Blanca (Tercera).</p>
+				<p><strong>Sellos / Originalidad:</strong> Impresión fuerte, sellos visibles.</p>
+				<p><strong>Calidad y Advertencias:</strong> Primera. Si el amarre se ve cambiado, riesgo de renfardado.</p>
+				<ul class="tags"><li>#Primera</li><li>#Compresión</li></ul>
+			</article>
+			<article class="tip-card" data-group="marca" data-quality="Primera Segunda">
+				<h3>Marca: Dilara</h3>
+				<p><strong>Características del hule:</strong> Hule de textura resistente.</p>
+				<p><strong>Color de etiqueta:</strong> Azul (Primera), Verde (Segunda), Blanca (Tercera).</p>
+				<p><strong>Sellos / Originalidad:</strong> Impresión con sellos redondos.</p>
+				<p><strong>Calidad y Advertencias:</strong> Primera / Segunda. Evitar si viene suelto.</p>
+				<ul class="tags"><li>#Primera</li><li>#Segunda</li><li>#Resistente</li></ul>
+			</article>
+			<article class="tip-card" data-group="marca" data-quality="Premium Primera">
+				<h3>Marca: The King</h3>
+				<p><strong>Características del hule:</strong> Hule más grueso del mercado; compresión muy alta.</p>
+				<p><strong>Color de etiqueta:</strong> Rojo (Primera), Amarillo (Segunda), Blanca (Tercera).</p>
+				<p><strong>Sellos / Originalidad:</strong> Impresión con sellos redondos.</p>
+				<p><strong>Calidad y Advertencias:</strong> Premium / Primera. Si está inflado, casi seguro fue abierto.</p>
+				<ul class="tags"><li>#Premium</li><li>#Primera</li><li>#CompresiónMáxima</li></ul>
+			</article>
+		</section>
+
+		<section class="tips-grid" aria-labelledby="california-titulo" data-section="cards">
+			<h2 id="california-titulo" class="sr-only">Fardos Directos Línea California</h2>
+			<!-- Línea California -->
+			<article class="tip-card" data-group="california" data-quality="Premium">
+				<h3>California SP (Premium)</h3>
+				<p><strong>Características físicas:</strong> Compresión máxima, hule grueso, peso alto.</p>
+				<p><strong>Color de etiqueta:</strong> Color blanco indicando SP (Premium).</p>
+				<p><strong>Originalidad:</strong> Sello SP grande y nítido; códigos sin manchas.</p>
+				<p><strong>Calidad y Advertencias:</strong> Premium. Si el fardo está blando o con cinta cambiada, no es original.</p>
+				<ul class="tags"><li>#Premium</li><li>#SP</li></ul>
+			</article>
+			<article class="tip-card" data-group="california" data-quality="Primera">
+				<h3>California PB (Primera)</h3>
+				<p><strong>Características físicas:</strong> Buena compresión, hule firme.</p>
+				<p><strong>Color de etiqueta:</strong> Color blanco indicando PB (Primera).</p>
+				<p><strong>Originalidad:</strong> PB impreso con claridad.</p>
+				<p><strong>Calidad y Advertencias:</strong> Primera. No debería estar inflado.</p>
+				<ul class="tags"><li>#Primera</li><li>#PB</li></ul>
+			</article>
+			<article class="tip-card" data-group="california" data-quality="Segunda">
+				<h3>California Económico (Segunda)</h3>
+				<p><strong>Características físicas:</strong> Compresión media, hule más delgado.</p>
+				<p><strong>Color de etiqueta:</strong> Color blanco indicando calidad Segunda.</p>
+				<p><strong>Originalidad:</strong> Sellos menos destacados pero nítidos.</p>
+				<p><strong>Calidad y Advertencias:</strong> Segunda. Si está muy suelto o flojo, posible renfardado.</p>
+				<ul class="tags"><li>#Segunda</li><li>#Económico</li></ul>
+			</article>
+			<article class="tip-card" data-group="california" data-quality="Tercera">
+				<h3>Washington (Tercera)</h3>
+				<p><strong>Características físicas:</strong> Compresión media-baja, hule delgado.</p>
+				<p><strong>Color de etiqueta:</strong> Color blanco indicando calidad Tercera.</p>
+				<p><strong>Originalidad:</strong> Impresión de menor calidad pero clara.</p>
+				<p><strong>Calidad y Advertencias:</strong> Tercera. Muy común en renfardados; revisar con más detalle.</p>
+				<ul class="tags"><li>#Tercera</li><li>#Washington</li></ul>
+			</article>
+		</section>
+
+		<!-- Vista acordeón -->
+		<div class="accordion" data-section="accordion" aria-label="Vista en acordeón" hidden>
+			<div class="accordion-item" data-quality="Primera">
+				<button class="accordion-summary" type="button">Marca: Turgut</button>
+				<div class="accordion-content">
+					<p><strong>Hule:</strong> Grueso, firme, color parejo; compresión alta.</p>
+					<p><strong>Etiquetas:</strong> Azul (1ª), Amarilla (2ª), Blanca (3ª), QR en esquina.</p>
+					<p><strong>Originalidad:</strong> Centrada, códigos nítidos.</p>
+					<p><strong>Advertencia:</strong> Si inflado, posible renfardado.</p>
+				</div>
+			</div>
+			<div class="accordion-item" data-quality="Primera Segunda">
+				<button class="accordion-summary" type="button">Marca: Chungur</button>
+				<div class="accordion-content">
+					<p><strong>Hule:</strong> Semigrueso firme, sin arrugas.</p>
+					<p><strong>Etiquetas:</strong> Rojo (1ª), Amarillo (2ª), Blanco (3ª).</p>
+					<p><strong>Originalidad:</strong> Sello rectangular, códigos limpios.</p>
+					<p><strong>Advertencia:</strong> Hule muy estirado = posible manipulación.</p>
+				</div>
+			</div>
+			<div class="accordion-item" data-quality="Primera">
+				<button class="accordion-summary" type="button">Marca: Tuana</button>
+				<div class="accordion-content">
+					<p><strong>Hule:</strong> Grueso y rígido, bien comprimido.</p>
+					<p><strong>Etiquetas:</strong> Roja (1ª), Amarilla (2ª), Blanca (3ª).</p>
+					<p><strong>Originalidad:</strong> Impresión fuerte, sellos visibles.</p>
+					<p><strong>Advertencia:</strong> Amarre modificado = riesgo renfardado.</p>
+				</div>
+			</div>
+			<div class="accordion-item" data-quality="Primera Segunda">
+				<button class="accordion-summary" type="button">Marca: Dilara</button>
+				<div class="accordion-content">
+					<p><strong>Hule:</strong> Textura resistente.</p>
+					<p><strong>Etiquetas:</strong> Azul (1ª), Verde (2ª), Blanca (3ª).</p>
+					<p><strong>Originalidad:</strong> Sellos redondos.</p>
+					<p><strong>Advertencia:</strong> Si viene suelto, evitar.</p>
+				</div>
+			</div>
+			<div class="accordion-item" data-quality="Premium Primera">
+				<button class="accordion-summary" type="button">Marca: The King</button>
+				<div class="accordion-content">
+					<p><strong>Hule:</strong> Más grueso; compresión muy alta.</p>
+					<p><strong>Etiquetas:</strong> Rojo (1ª), Amarillo (2ª), Blanca (3ª).</p>
+					<p><strong>Originalidad:</strong> Sellos redondos.</p>
+					<p><strong>Advertencia:</strong> Inflado = casi seguro abierto.</p>
+				</div>
+			</div>
+			<hr aria-hidden="true" />
+			<div class="accordion-item" data-quality="Premium">
+				<button class="accordion-summary" type="button">California SP (Premium)</button>
+				<div class="accordion-content">
+					<p><strong>Físicas:</strong> Compresión máxima, hule grueso, peso alto.</p>
+					<p><strong>Etiqueta:</strong> Blanca con SP claro.</p>
+					<p><strong>Originalidad:</strong> Sello SP grande nítido.</p>
+					<p><strong>Advertencia:</strong> Blando o cinta cambiada = no original.</p>
+				</div>
+			</div>
+			<div class="accordion-item" data-quality="Primera">
+				<button class="accordion-summary" type="button">California PB (Primera)</button>
+				<div class="accordion-content">
+					<p><strong>Físicas:</strong> Buena compresión, hule firme.</p>
+					<p><strong>Etiqueta:</strong> Blanca con PB.</p>
+					<p><strong>Originalidad:</strong> PB claro.</p>
+					<p><strong>Advertencia:</strong> No debe estar inflado.</p>
+				</div>
+			</div>
+			<div class="accordion-item" data-quality="Segunda">
+				<button class="accordion-summary" type="button">California Económico (Segunda)</button>
+				<div class="accordion-content">
+					<p><strong>Físicas:</strong> Compresión media, hule más delgado.</p>
+					<p><strong>Etiqueta:</strong> Blanca calidad Segunda.</p>
+					<p><strong>Originalidad:</strong> Sellos menos destacados.</p>
+					<p><strong>Advertencia:</strong> Suelto/flojo = posible renfardado.</p>
+				</div>
+			</div>
+			<div class="accordion-item" data-quality="Tercera">
+				<button class="accordion-summary" type="button">Washington (Tercera)</button>
+				<div class="accordion-content">
+					<p><strong>Físicas:</strong> Compresión media-baja, hule delgado.</p>
+					<p><strong>Etiqueta:</strong> Blanca calidad Tercera.</p>
+					<p><strong>Originalidad:</strong> Impresión menor pero clara.</p>
+					<p><strong>Advertencia:</strong> Muy común renfardado; revisar más.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Vista tabla comparativa -->
+		<div class="compare-wrapper" data-section="table" hidden>
+			<table class="compare-table" aria-describedby="caption-comp" id="comparativa">
+				<caption id="caption-comp" class="sr-only">Comparativa rápida de marcas y tipos por calidad y advertencias.</caption>
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Calidad</th>
+						<th>Hule / Físicas</th>
+						<th>Etiqueta</th>
+						<th>Originalidad</th>
+						<th>Advertencia</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-quality="Primera"><td>Turgut</td><td class="qual-label">Primera</td><td>Grueso firme alta compresión</td><td>Azul / Amarilla / Blanca + QR</td><td>Códigos nítidos centrada</td><td>Inflado = renfardado</td></tr>
+					<tr data-quality="Primera Segunda"><td>Chungur</td><td class="qual-label">1ª / 2ª</td><td>Semigrueso firme</td><td>Rojo / Amarillo / Blanco</td><td>Sello rectangular limpio</td><td>Hule muy estirado = manipulación</td></tr>
+					<tr data-quality="Primera"><td>Tuana</td><td class="qual-label">Primera</td><td>Grueso rígido comprimido</td><td>Roja / Amarilla / Blanca</td><td>Sellos visibles fuertes</td><td>Amarre cambiado = riesgo</td></tr>
+					<tr data-quality="Primera Segunda"><td>Dilara</td><td class="qual-label">1ª / 2ª</td><td>Textura resistente</td><td>Azul / Verde / Blanca</td><td>Sellos redondos</td><td>Suelto = evitar</td></tr>
+					<tr data-quality="Premium Primera"><td>The King</td><td class="qual-label">Premium / 1ª</td><td>Más grueso compresión muy alta</td><td>Rojo / Amarillo / Blanca</td><td>Sellos redondos</td><td>Inflado = abierto</td></tr>
+					<tr data-quality="Premium"><td>California SP</td><td class="qual-label">Premium</td><td>Máxima compresión peso alto</td><td>Blanca SP</td><td>Sello SP grande</td><td>Blando/cinta cambiada = falso</td></tr>
+					<tr data-quality="Primera"><td>California PB</td><td class="qual-label">Primera</td><td>Buena compresión firme</td><td>Blanca PB</td><td>PB claro</td><td>No debe inflarse</td></tr>
+					<tr data-quality="Segunda"><td>California Económico</td><td class="qual-label">Segunda</td><td>Compresión media delgado</td><td>Blanca Segunda</td><td>Sellos menos destacados</td><td>Suelto = renfardado</td></tr>
+					<tr data-quality="Tercera"><td>Washington</td><td class="qual-label">Tercera</td><td>Media-baja delgado</td><td>Blanca Tercera</td><td>Impresión menor clara</td><td>Común renfardado</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
+
+	<section class="contact-cta" aria-labelledby="contactar-emprender">
+		<div class="contact-inner">
+			<h2 id="contactar-emprender">¿Quieres emprender con ropa americana?</h2>
+			<p>Obtén asesoría sobre selección de fardos, proveedores confiables y estrategias para iniciar tu negocio. Escríbeme y te ayudo a comenzar con menos riesgo.</p>
+			<a class="whatsapp-btn" href="https://wa.me/59173697782" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp al número +591 73697782">
+				<span class="wa-icon" aria-hidden="true">
+					<!-- SVG ícono WhatsApp -->
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="12" cy="12" r="12" fill="#25D366"/>
+						<path fill="#fff" d="M12.04 5.25c-3.69 0-6.69 2.97-6.69 6.63 0 1.17.31 2.31.9 3.32l-1.02 3.02 3.11-.98c.96.52 2.05.8 3.16.8h.01c3.69 0 6.69-2.97 6.69-6.63 0-1.77-.7-3.43-1.97-4.68-1.27-1.25-2.95-1.95-4.79-1.95Zm3.89 9.52c-.17.48-.98.91-1.36.97-.35.06-.8.09-1.29-.08-.3-.1-.68-.22-1.16-.43-2.05-.89-3.38-2.96-3.48-3.1-.1-.14-.83-1.11-.83-2.12 0-1 .53-1.49.72-1.7.19-.21.42-.26.56-.26h.4c.13 0 .3-.05.47.36.17.41.57 1.41.62 1.51.05.1.08.22.02.36-.06.14-.09.22-.17.35-.09.13-.19.29-.27.39-.09.1-.19.22-.08.43.11.21.5.82 1.07 1.33.74.66 1.37.87 1.58.97.21.1.34.08.46-.05.13-.13.53-.62.67-.83.14-.21.28-.17.47-.1.19.07 1.22.58 1.43.68.21.1.35.16.4.24.06.08.06.49-.11.97Z"/>
+					</svg>
+				</span>
+				<span class="wa-text">Escríbeme al <strong>+591 73697782</strong></span>
+			</a>
+		</div>
+	</section>
+
+	
+
+	<footer class="site-footer" role="contentinfo">
+		<p>© 2025 Guía Fardos Ropa Americana. Todos los derechos reservados.</p>
+		<nav aria-label="Enlaces de pie">
+			<a href="#hero">Inicio</a> · <a href="#features">Por qué</a> · <a href="#marcas-titulo">Marcas</a> · <a href="#contactar-emprender">Contacto</a>
+		</nav>
+	</footer>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
